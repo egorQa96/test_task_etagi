@@ -49,10 +49,10 @@ if(isset($data['do_task'])) {
 <?php if(isset($_SESSION['logged_user'])) : ?>
 	Здравствуйте Администратор <?php echo $_SESSION['logged_user']-> name;?></br>
 	<?php 
-$db_host='localhost'; // ваш хост
-$db_name='etagi'; // ваша бд
-$db_user='root'; // пользователь бд
-$db_pass='root'; // пароль к бд
+$db_host='eu-cdbr-west-03.cleardb.net'; // ваш хост
+$db_name='heroku_8bcc022f59a9e52'; // ваша бд
+$db_user='b55848166756f5'; // пользователь бд
+$db_pass='016d3c67'; // пароль к бд
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);// включаем сообщения об ошибках
 $mysqli = new mysqli($db_host, $db_user, $db_pass, $db_name); // коннект с сервером бд
 $mysqli->set_charset("utf8"); // задаем кодировку
